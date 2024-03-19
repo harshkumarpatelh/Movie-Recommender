@@ -1,0 +1,38 @@
+.sel{
+    color: rgb(31, 198, 22);
+    background-color: rgb(240, 239, 207);
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration:wavy;
+}
+
+.sel2{
+    color: rgba(26, 2, 148, 0.966);
+}
+
+#detail1{
+    text-align: center;
+   padding-top: 200px;
+}
+
+.movie{
+    background-color:rgb(140, 173, 238);
+}
+.err{
+    color: red;
+}
+
+.header{
+    height: 80px; 
+    background-image: linear-gradient(161deg, #3be03b, #f3f3f9,#78d960, #00000003);    
+    border :1px solid;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+.footer{
+    background-color: rgb(209, 209, 238);
+    height:80px;
+    border :1px solid;
+    padding-top: 40px;
+}

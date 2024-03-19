@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- it is used to adjust the page according to device screen size -->
+    <title>Movie Recommendation</title>
+    <link rel="stylesheet" href = 'static\style.css'>
+
+</head>
+<body">
+<header class='header'>
+    <!-- <h1 class ='sel'>Welcome to Movie Magic </h1> -->
+    <h1 style="color: red;">Welcome to Movie magic</h1>
+</header>
+<!-- <hr style="background-color: white;">  -->
+<div style="padding-top: 10px;">
+    <a href="/">
+        <img src="static\home.png" alt="Home" style="height: 30px; width: 30px;">
+      </a>
+</div>
+<h3  class="sel2">Discover Your Cinematic Tastes</h3>
+   
+
+    <form action="/recommend" method="post" class ='form_sel'>
+        <div>
+        <input type="text"  name = "movie_name" placeholder="Enter Movie name">
+        </div>
+        <p><strong>NOTE :</strong> Movie should be released in year between 1995 to 2019</p>
+        <!-- <input type ='submit' value="Enter" style="background-color: rgb(68, 231, 176); text-decoration: rgb(237, 105, 28);"> -->
+    </form>
+
+    <div class ='movie'>
+   {%if movie_list %} 
+    <ol typy="1">
+    {% for m in movie_list%}
+    <li>{{m}}</li>
+   {%endfor%}
+   </ol>
+   {%endif%}
+    </div>
+
+   <!--block content correspond to 'Error.html'-->
+   <div>
+    {% block content %}
+    {% endblock %}
+   </div>
+
+   <div id ='detail1'>
+    <footer class="footer">
+    <!-- <p><strong>Connections🔗</strong></p> -->
+    <a href="https://www.linkedin.com/in/harsh-kumar-patel-032388230/" target ="_blank">
+        <img src ='static\linkedin.png' alt ='🔗' style="height: 30px; width: 30px;">
+    </a>
+
+    <a href="https://www.kaggle.com/harshpatelind13" target ="blank" style="margin: 10px;">
+        <img src ='static\kaggle.png' alt ='🔗' style="height: 30px; width: 80px;" >
+    </a>
+
+    <a href="https://x.com/Harshpa94942441" target ="blank" style="margin: 10px;">
+        <img src ='static\twitter.png' alt ='🔗' style="height: 30px; width: 30px;" >
+    </a>
+    </footer>
+   </div>
+
+</body>
+</html>
+
+    
